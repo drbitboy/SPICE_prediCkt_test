@@ -64,7 +64,7 @@ def do_main(argv):
       plt.axvline(ettca-et0,label='TCA')
       plt.xlabel('Time, s past {0} TDB'.format(sp.etcal(et0,99)))
       plt.ylabel('Error, deg')
-      plt.legend(loc='upper left')
+      plt.legend(loc='best')
       plt.show()
     except:
       if do_debug:
