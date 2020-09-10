@@ -1,10 +1,16 @@
-# Test of SPICE utility prediCkt
+# Test of NAIF/SPICE utility prediCkt
+
+## Create synthetic NAIF/SPICE C-kernel (CK) file
+
+* CK will contain attitude (pointing) of Deep Impact Flyby (DIF) Spacecraft frem
+* For 8h, approximater 6h before and 2h after, DIF Closest Approach to comet 9P/Tempel 1
+* -X axis of DIF frame will point toward comet
+* -Z axis of DIF frame will be as close as possible to DIF velocity vector
+
 
 ## Usage
 
     make [clean] [default|plot]
-
-
 
 ## Manifest
 * ck_specs - Input to prediCkt utility
