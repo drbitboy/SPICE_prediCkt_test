@@ -8,27 +8,25 @@ For details of format see prediCkt User's Guide:
 1) Frame that will be defined is -140000 i.e. fram DIF_SPACECRAFT
 1.1) Cf. meta-kernel (MK) file mk.tm
 1.2) 140 and -140 are integer IDs for Deep Impact Flyby Spacecraft (DIF)
-
+########################################################################
 \begindata
- 
+
   CK-FRAMES        += -140000
   CK-SCLK          += 140
   CK-SPK           += -140
 
 \begintext
-
 ########################################################################
 2) Direction specifications (vectors)
 2.1) Position of comet 9P/Tempel 1 (1000093) wrt DIF (-140)
 2.2) Velocity from DIF wrt comet 9P/Tempel 1
-
+########################################################################
 \begindata
 
   DIRECTION_SPECS += ( 'T1POS  = POSITION OF 1000093 FROM -140 CORRECTION NONE' )
   DIRECTION_SPECS += ( 'DIFVEL = VELOCITY OF -140 FROM 1000093 CORRECTION NONE' )
 
 \begintext
-
 ########################################################################
 3) DI S/C frame orientation definition
 3.1) PRIMARY:  aim -X axis of frame toward 9P/Tempel 1
@@ -37,7 +35,7 @@ For details of format see prediCkt User's Guide:
 3.2.1.1) To a viewer looking along the DIF velocity vector from behind
          (up-track of) DIF with 9P/Tempel 1 on the left, +Y is up
 3.3) BASE_FRAME:  CK data will
-
+########################################################################
 \begindata
 
   ORIENTATION_NAME += 'T1_FLYBY'
@@ -46,13 +44,12 @@ For details of format see prediCkt User's Guide:
   BASE_FRAME       += 'J2000'
 
 \begintext
-
 ########################################################################
 4) Instance of defined orientation over a specific time period
 4.1) Approximately 6h before to 2h after the DIF Closest approach
-
+########################################################################
 \begindata
- 
+
   CK-140000ORIENTATION += 'T1_FLYBY'
   CK-140000START       += @2005-07-04-00:00:00
   CK-140000STOP        += @2005-07-04-08:00:00
