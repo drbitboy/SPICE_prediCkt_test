@@ -2,7 +2,7 @@
 
 ## Create synthetic NAIF/SPICE C-kernel (CK) file
 
-* CK will contain attitude (pointing) of Deep Impact Flyby (DIF) Spacecraft frem
+* CK will contain attitude (pointing) of Deep Impact Flyby (DIF) Spacecraft frame
 * For 8h, approximater 6h before and 2h after, DIF Closest Approach to comet 9P/Tempel 1
 * -X axis of DIF frame will point toward comet
 * -Z axis of DIF frame will be as close as possible to DIF velocity vector
